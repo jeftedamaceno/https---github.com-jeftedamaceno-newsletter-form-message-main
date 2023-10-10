@@ -5,6 +5,7 @@
 }
 body{
     background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto";
 }
 main{
     display: flex;
@@ -19,7 +20,10 @@ main{
     width: 900px;
     margin-top: 4%;
     border-radius: 30px;
-    font-family: "Roboto";
+
+}
+.imagen-mobile{
+    display: none;
 }
 .formulario{
     margin: 20px;
@@ -53,7 +57,7 @@ form input{
 
 }
 
-form button{
+.button-from{
     height: 50px;
     width: 100%;
     border-radius: 10px;
@@ -62,7 +66,7 @@ form button{
     background-color: hsl(234, 29%, 20%);
     border: 0;
 }
-form button:hover{
+.button-from:hover{
     cursor: pointer;
     background: linear-gradient(45deg ,hsl(14, 97%, 73%), hsl(4, 97%, 64%));
 }
@@ -77,4 +81,42 @@ form input:hover{
     align-items: center;
     padding: 1rem;
 
+}
+.message{
+    margin-top: 8%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.message-sucesse{
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 430px;
+    height: 450px;
+}
+.message-sucesse *{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.imagen-sucesse{
+    margin: 30px 0px 30px 60px;
+}
+.message-sucesse h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: hsl(234, 29%, 20%);;
+}
+.message-sucesse b{
+    margin: 0;
+}
+
+.message-sucesse p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.message-sucesse button{
+    width: 72%;
+}
+.desativado{
+    display: none;
 }

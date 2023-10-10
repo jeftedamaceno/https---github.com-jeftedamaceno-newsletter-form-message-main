@@ -8,12 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Roboto&family=Rubik&family=Secular+One&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/responsivo.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
   <main>
     <div class="elementos-form">
       <div class="formulario">
+        <img class="imagen-mobile" src="./src/assets/images/illustration-sign-up-mobile.svg" alt="">
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
         <ul>
@@ -23,8 +25,8 @@
         </ul>
         <form action="" method="get">
           <b><p>Email address</p></b>
-          <input type="email" placeholder="email@company.com"><br>
-          <button>Subscribe to monthly newsletter</button>
+          <input type="email" name="email" placeholder="email@company.com" ><br>
+          <button class="button-from">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div class="imagem">
@@ -33,20 +35,18 @@
     </div>
   </main>
 
+
+<div class="message desativado">
+  <div class="message-sucesse">
+    <img class="imagen-sucesse" src="./src/assets/images/icon-success.svg" alt="">
+    <h1>Thanks for subscribing!</h1>
+    <p>
+      A confirmation email has been sent to <b>ash@loremcompany.com</b> Please open it and click the button inside to confirm your subscription.
+    </p>
   
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
-  
+    <button class="button-from">Dismiss message</button> 
+  </div>
+</div>
+<script src="./src/js/index.js"></script>
 </body>
 </html>
