@@ -28,8 +28,8 @@ main{
 .formulario{
     margin: 20px;
     height: 450px;
-    margin: 50px 50px;
-    margin-right: 0;
+    margin: 40px 70px 70px 50px;
+    margin-right: 70px;
 }
 .formulario h1{
     margin-bottom: 15px;
@@ -44,9 +44,10 @@ main{
 .formulario li{
     margin: 0px 0px 10px 0px
 }
-form p {
+form p{
     font-size: 16px;
     margin-top: 30px;
+    float: left;
 }
 form input{
     height: 50px;
@@ -60,7 +61,7 @@ form input{
 
 .button-from{
     height: 50px;
-    width: 100%;
+    width: 101%;
     border-radius: 10px;
     text-align: center;
     color: #ffffff;
@@ -114,10 +115,22 @@ form input:hover{
 .message-sucesse p{
     margin-bottom: 30px;
     font-size: 14px;
+
 }
 .message-sucesse button{
     width: 72%;
 }
 .desativado{
     display: none;
+}
+.texto_erro{
+    display: none;
+    float: right;
+    color: #f14747;
+    justify-content: end;
+}
+.input-alert-color{
+    border-color: #FF0000;
+    background-color: #f14747;
+    color: #FF0000;
 }

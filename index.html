@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/css/responsivo.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="./src/js/index.js" defer></script>
 </head>
 <body>
   <main>
@@ -23,9 +24,12 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form action="" method="get">
-          <b><p>Email address</p></b>
-          <input type="email" name="email" placeholder="email@company.com" ><br>
+        <form action="">
+          <b>
+            <p>Email address</p>
+            <p class="texto_erro">Valid email required</p>
+          </b>
+          <input type="email" id="email" name="email" placeholder="email@company.com" ><br>
           <button class="button-from">Subscribe to monthly newsletter</button>
         </form>
       </div>
@@ -45,6 +49,5 @@
     <button class="button-from">Dismiss message</button> 
   </div>
 </div>
-<script src="./src/js/index.js"></script>
 </body>
 </html>
